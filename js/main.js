@@ -94,3 +94,19 @@ window.onscroll = () => {
 
 arrow.onclick = () => window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 // END button to up
+
+// burger
+
+const burgerBtn = document.querySelector(".burger-menu");
+const burgerFirstLine = document.querySelector(".burger-first-line");
+const burgerSecondLine = document.querySelector(".burger-second-line");
+const burgerThirdLine = document.querySelector(".burger-third-line");
+const navigation = document.querySelector(".navigation-list");
+burgerBtn.addEventListener("click", ()=>{
+  burgerFirstLine.classList.toggle("opened-first-line");
+  burgerSecondLine.classList.toggle("opened-second-line");
+  burgerThirdLine.classList.toggle("opened-third-line");
+  navigation.classList.toggle("navigation-list-opened");
+})
+
+//END burger
