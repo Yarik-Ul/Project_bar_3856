@@ -196,8 +196,7 @@ body {
 .navigation-list {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap:24px
 }
 
 h1 {
@@ -224,7 +223,7 @@ h1 {
 .info-wrapper {
   max-width: 400px;
   display: flex;
-  justify-content: space-around;
+  gap: 24px
 }
 
 /*header*/
@@ -344,7 +343,7 @@ h2 {
 
 .about_discription {
   width: 90%;
- 
+
   color: #262121;
   font-size: 16px;
   line-height: 1.3;
@@ -579,6 +578,7 @@ h2 {
   }
   .choice-img-container {
     flex-direction: column;
+    
   }
   .menu {
     width: 100%;
@@ -622,14 +622,14 @@ h2 {
     position: absolute;
     top: 5px;
     right: 0;
-    width: 340px;
+    width: 80%;
     height: 80vh;
     background-color: #fdb92d;
     right: -100%;
-    transition: 300ms ease;  
+    transition: 300ms ease;
   }
   .navigation-list-opened {
-   right: 0;
+    right: 0;
   }
   .list-item {
     display: flex;
@@ -651,16 +651,18 @@ h2 {
     cursor: pointer;
     z-index: 2;
   }
-  
-  .burger-first-line, .burger-second-line, .burger-third-line {
+
+  .burger-first-line,
+  .burger-second-line,
+  .burger-third-line {
     position: absolute;
     display: block;
     width: 100%;
     height: 6px;
     background-color: #fdb92d;
-    
+
     transition: transform 300ms ease-in-out;
-		will-change: transform;
+    will-change: transform;
   }
   .burger-first-line {
     top: 0;
@@ -680,13 +682,13 @@ h2 {
   }
   .opened-second-line {
     background-color: #fff;
-   transform: scale(0);
+    transform: scale(0);
   }
   .opened-third-line {
     background-color: #fff;
     transform: rotate(-45deg) translateX(30px) translateY(-30px);
   }
-    
+
   .first-view {
     height: 500px;
   }
@@ -714,15 +716,24 @@ h2 {
     width: 300px;
     height: 60px;
   }
+  .choice::before {
+    display: none;
+  }
+  .choice::after {
+  display: none;
+  }
   .footer-container {
     flex-direction: column;
   }
-  .left-side-footer, .right-side-footer {
+  .left-side-footer,
+  .right-side-footer {
     width: 100%;
   }
   .left-side-footer {
     padding: 10px;
   }
+  .choice-img-container {
+    padding: 0 5px;
+    
+  }
 }
-
-
