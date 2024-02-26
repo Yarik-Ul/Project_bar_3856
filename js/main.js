@@ -102,11 +102,18 @@ const burgerFirstLine = document.querySelector(".burger-first-line");
 const burgerSecondLine = document.querySelector(".burger-second-line");
 const burgerThirdLine = document.querySelector(".burger-third-line");
 const navigation = document.querySelector(".navigation-list");
+
 burgerBtn.addEventListener("click", ()=>{
   burgerFirstLine.classList.toggle("opened-first-line");
   burgerSecondLine.classList.toggle("opened-second-line");
   burgerThirdLine.classList.toggle("opened-third-line");
   navigation.classList.toggle("navigation-list-opened");
+  if(navigation.classList.contains("navigation-list-opened")) {
+    burgerBtn.style.position = "fixed";
+  }
+  else {
+    burgerBtn.style.position = "relative";
+  }
 })
 
 //END burger
