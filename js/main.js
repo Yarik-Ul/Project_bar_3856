@@ -40,7 +40,7 @@ function orderTable() {
         date: dateValue,
         time: timeValue,
       });
-      showPopup("Thank you for choosing us");
+      showPopup("Thank you for choosing us. We will contact you soon");
 
       // We store the updated object in localStorage
       localStorage.setItem("orderedTables", JSON.stringify(orderedTables));
